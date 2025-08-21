@@ -2,7 +2,7 @@
 //!
 //! ## Example
 //! ```rust
-//! use jpreprocess_window::*;
+//! use jpreprocess_mod_window::*;
 //!
 //! let mut vector = [0, 1, 2, 3, 4];
 //! let mut iter = IterQuintMut::new(&mut vector);
