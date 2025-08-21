@@ -3,7 +3,7 @@ mod storage_fetcher;
 
 #[cfg(not(target_family = "wasm"))]
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    use jpreprocess::*;
+    use jpreprocess_mod::*;
     use std::path::PathBuf;
     use storage_fetcher::LruTokenizer;
 

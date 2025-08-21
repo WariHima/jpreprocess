@@ -5,7 +5,7 @@
 //! - 小数点を正しく読む．例えば「0.1」は「ぜろてんいち」ではなく「れーてんいち」．
 
 use crate::{NJDNode, NJD};
-use jpreprocess_core::pron;
+use jpreprocess_mod_core::pron;
 
 mod builder;
 mod score;

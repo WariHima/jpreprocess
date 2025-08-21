@@ -1,5 +1,5 @@
 [package]
-name = "jpreprocess"
+name = "jpreprocess-mod"
 edition = "2021"
 
 version.workspace = true
@@ -13,7 +13,7 @@ rust-version.workspace = true
 documentation = "https://docs.rs/jpreprocess"
 
 [features]
-naist-jdic = ["dep:jpreprocess-naist-jdic", "jpreprocess-naist-jdic/naist-jdic"]
+naist-jdic = ["dep:jpreprocess-mod-naist-jdic", "jpreprocess-mod-naist-jdic/naist-jdic"]
 binary = ["dep:clap", "dep:serde_json"]
 
 [[bin]]
@@ -27,12 +27,12 @@ lindera-dictionary.workspace = true
 phf = { workspace = true, features = ["macros"] }
 
 jlabel.workspace = true
-jpreprocess-core.workspace = true
-jpreprocess-njd.workspace = true
-jpreprocess-jpcommon.workspace = true
-jpreprocess-dictionary.workspace = true
+jpreprocess-mod-core.workspace = true
+jpreprocess-mod-njd.workspace = true
+jpreprocess-mod-jpcommon.workspace = true
+jpreprocess-mod-dictionary.workspace = true
 
-jpreprocess-naist-jdic = { workspace = true, optional = true }
+jpreprocess-mod-naist-jdic = { workspace = true, optional = true }
 
 clap = { workspace = true, features = ["derive"], optional = true }
 serde_json = { workspace = true, optional = true }

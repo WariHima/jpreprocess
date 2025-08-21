@@ -465,11 +465,11 @@ dependencies = [
 
 [[package]]
 name = "example-lru"
-version = "0.12.0"
+version = "0.1.0"
 dependencies = [
- "jpreprocess",
- "jpreprocess-core",
- "jpreprocess-dictionary",
+ "jpreprocess-mod",
+ "jpreprocess-mod-core",
+ "jpreprocess-mod-dictionary",
  "lindera",
  "lindera-dictionary",
  "lru",
@@ -477,16 +477,16 @@ dependencies = [
 
 [[package]]
 name = "example-simple"
-version = "0.12.0"
+version = "0.1.0"
 dependencies = [
- "jpreprocess",
+ "jpreprocess-mod",
 ]
 
 [[package]]
 name = "example-wasm"
-version = "0.12.0"
+version = "0.1.0"
 dependencies = [
- "jpreprocess",
+ "jpreprocess-mod",
  "js-sys",
  "lindera",
  "lindera-dictionary",
@@ -907,16 +907,16 @@ dependencies = [
 ]
 
 [[package]]
-name = "jpreprocess"
-version = "0.12.0"
+name = "jpreprocess-mod"
+version = "0.1.0"
 dependencies = [
  "clap",
  "jlabel",
- "jpreprocess-core",
- "jpreprocess-dictionary",
- "jpreprocess-jpcommon",
- "jpreprocess-naist-jdic",
- "jpreprocess-njd",
+ "jpreprocess-mod-core",
+ "jpreprocess-mod-dictionary",
+ "jpreprocess-mod-jpcommon",
+ "jpreprocess-mod-naist-jdic",
+ "jpreprocess-mod-njd",
  "lindera",
  "lindera-dictionary",
  "phf",
@@ -924,8 +924,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "jpreprocess-core"
-version = "0.12.0"
+name = "jpreprocess-mod-core"
+version = "0.1.0"
 dependencies = [
  "aho-corasick",
  "bincode",
@@ -937,8 +937,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "jpreprocess-dictionary"
-version = "0.12.0"
+name = "jpreprocess-mod-dictionary"
+version = "0.1.0"
 dependencies = [
  "anyhow",
  "bincode",
@@ -947,7 +947,7 @@ dependencies = [
  "csv",
  "derive_builder",
  "glob",
- "jpreprocess-core",
+ "jpreprocess-mod-core",
  "lindera",
  "lindera-dictionary",
  "log",
@@ -958,43 +958,43 @@ dependencies = [
 ]
 
 [[package]]
-name = "jpreprocess-jpcommon"
-version = "0.12.0"
+name = "jpreprocess-mod-jpcommon"
+version = "0.1.0"
 dependencies = [
  "jlabel",
- "jpreprocess-core",
- "jpreprocess-njd",
+ "jpreprocess-mod-core",
+ "jpreprocess-mod-njd",
 ]
 
 [[package]]
-name = "jpreprocess-naist-jdic"
-version = "0.12.0"
+name = "jpreprocess-mod-naist-jdic"
+version = "0.1.0"
 dependencies = [
- "jpreprocess-dictionary",
+ "jpreprocess-mod-dictionary",
  "lindera-dictionary",
  "tokio",
 ]
 
 [[package]]
-name = "jpreprocess-njd"
-version = "0.12.0"
+name = "jpreprocess-mod-njd"
+version = "0.1.0"
 dependencies = [
  "aho-corasick",
- "jpreprocess-core",
- "jpreprocess-dictionary",
- "jpreprocess-window",
+ "jpreprocess-mod-core",
+ "jpreprocess-mod-dictionary",
+ "jpreprocess-mod-window",
  "phf",
 ]
 
 [[package]]
-name = "jpreprocess-python"
+name = "jpreprocess-mod-python"
 version = "0.1.5"
 dependencies = [
- "jpreprocess",
- "jpreprocess-core",
- "jpreprocess-dictionary",
- "jpreprocess-jpcommon",
- "jpreprocess-njd",
+ "jpreprocess-mod",
+ "jpreprocess-mod-core",
+ "jpreprocess-mod-dictionary",
+ "jpreprocess-mod-jpcommon",
+ "jpreprocess-mod-njd",
  "lindera",
  "lindera-dictionary",
  "pyo3",
@@ -1004,8 +1004,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "jpreprocess-window"
-version = "0.12.0"
+name = "jpreprocess-mod-window"
+version = "0.1.0"
 
 [[package]]
 name = "js-sys"
@@ -1854,13 +1854,13 @@ checksum = "e502f78cdbb8ba4718f566c418c52bc729126ffd16baee5baa718cf25dd5a69a"
 
 [[package]]
 name = "tests"
-version = "0.12.0"
+version = "0.1.0"
 dependencies = [
- "jpreprocess",
- "jpreprocess-core",
- "jpreprocess-dictionary",
- "jpreprocess-jpcommon",
- "jpreprocess-njd",
+ "jpreprocess-mod",
+ "jpreprocess-mod-core",
+ "jpreprocess-mod-dictionary",
+ "jpreprocess-mod-jpcommon",
+ "jpreprocess-mod-njd",
  "lindera",
 ]
 

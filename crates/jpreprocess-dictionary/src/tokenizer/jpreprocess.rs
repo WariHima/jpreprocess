@@ -1,6 +1,6 @@
 use std::borrow::Cow;
 
-use jpreprocess_core::{error::DictionaryError, word_entry::WordEntry, JPreprocessResult};
+use jpreprocess_mod_core::{error::DictionaryError, word_entry::WordEntry, JPreprocessResult};
 
 use crate::{
     dictionary::word_encoding::JPreprocessDictionaryWordEncoding, word_data::get_word_data,
@@ -83,7 +83,7 @@ impl<'a> JPreprocessToken<'a> {
 }
 
 impl Token for JPreprocessToken<'_> {
-    fn fetch(&mut self) -> Result<(&str, WordEntry), jpreprocess_core::JPreprocessError> {
+    fn fetch(&mut self) -> Result<(&str, WordEntry), jpreprocess_mod_core::JPreprocessError> {
         Ok((&self.text, self.entry.clone()))
     }
 }

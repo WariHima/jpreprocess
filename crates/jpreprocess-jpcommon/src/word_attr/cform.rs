@@ -1,4 +1,4 @@
-use jpreprocess_core::cform::CForm;
+use jpreprocess_mod_core::cform::CForm;
 
 pub fn cform_to_id(cform: &CForm) -> Option<u8> {
     match cform {

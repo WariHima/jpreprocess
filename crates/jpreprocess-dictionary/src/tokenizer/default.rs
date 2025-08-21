@@ -1,4 +1,4 @@
-use jpreprocess_core::{word_entry::WordEntry, JPreprocessResult};
+use jpreprocess_mod_core::{word_entry::WordEntry, JPreprocessResult};
 use lindera_dictionary::dictionary::prefix_dictionary::PrefixDictionary;
 
 use super::{

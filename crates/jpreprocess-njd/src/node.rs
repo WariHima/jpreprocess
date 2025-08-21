@@ -1,12 +1,12 @@
 use std::fmt::Debug;
 use std::fmt::Display;
 
-use jpreprocess_core::word_entry::WordEntry;
-use jpreprocess_core::{
+use jpreprocess_mod_core::word_entry::WordEntry;
+use jpreprocess_mod_core::{
     cform::CForm, ctype::CType, pos::*, pronunciation::Pronunciation, word_details::WordDetails,
 };
 
-use jpreprocess_core::accent_rule::ChainRules;
+use jpreprocess_mod_core::accent_rule::ChainRules;
 
 #[derive(Clone, PartialEq, Debug)]
 pub struct NJDNode {

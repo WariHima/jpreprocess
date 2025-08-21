@@ -17,11 +17,11 @@ pythonize = "0.24.0"
 serde.workspace = true
 serde_json.workspace = true
 
-jpreprocess.workspace = true
-jpreprocess-core.workspace = true
-jpreprocess-dictionary.workspace = true
-jpreprocess-njd.workspace = true
-jpreprocess-jpcommon.workspace = true
+jpreprocess-mod.workspace = true
+jpreprocess-mod-core.workspace = true
+jpreprocess-mod-dictionary.workspace = true
+jpreprocess-mod-njd.workspace = true
+jpreprocess-mod-jpcommon.workspace = true
 
 lindera.workspace = true
 lindera-dictionary.workspace = true

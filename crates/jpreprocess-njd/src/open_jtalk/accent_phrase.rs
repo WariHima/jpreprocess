@@ -22,9 +22,9 @@
 //! 18. 「*,接尾」は前にくっつける
 
 use crate::{NJDNode, NJD};
-use jpreprocess_core::pos::*;
+use jpreprocess_mod_core::pos::*;
 
-use jpreprocess_window::*;
+use jpreprocess_mod_window::*;
 
 pub fn njd_set_accent_phrase(njd: &mut NJD) {
     if njd.nodes.is_empty() {

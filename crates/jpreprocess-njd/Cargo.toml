@@ -1,5 +1,5 @@
 [package]
-name = "jpreprocess-njd"
+name = "jpreprocess-mod-njd"
 edition = "2021"
 
 version.workspace = true
@@ -16,6 +16,6 @@ documentation = "https://docs.rs/jpreprocess-njd"
 phf = { workspace = true, features = ["macros"] }
 aho-corasick.workspace = true
 
-jpreprocess-core.workspace = true
-jpreprocess-window.workspace = true
-jpreprocess-dictionary.workspace = true
+jpreprocess-mod-core.workspace = true
+jpreprocess-mod-window.workspace = true
+jpreprocess-mod-dictionary.workspace = true

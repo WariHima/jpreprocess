@@ -10,15 +10,15 @@
 //! 5. 無声子音(`k ky s sh t ty ch ts h f hy p py`)に囲まれた「`i`」と「`u`」が無声化
 //!    - 例外：`s->s`, `s->sh`, `f->f`, `f->h`, `f->hy`, `h->f`, `h->h`, `h->hy`
 
-use jpreprocess_core::pronunciation::{
+use jpreprocess_mod_core::pronunciation::{
     phoneme::{Consonant, Vowel},
     Mora, MoraEnum,
 };
 
 use crate::NJD;
-use jpreprocess_core::pos::*;
+use jpreprocess_mod_core::pos::*;
 
-use jpreprocess_window::{IterQuintMut, QuadForward};
+use jpreprocess_mod_window::{IterQuintMut, QuadForward};
 
 #[derive(Debug)]
 struct MoraState<'a> {
@@ -212,7 +212,7 @@ fn apply_unvoice_rule(mora_curr: &Mora, mora_next: Option<&Mora>) -> Option<bool
 
 #[cfg(test)]
 mod tests {
-    use jpreprocess_core::pronunciation::{Mora, MoraEnum};
+    use jpreprocess_mod_core::pronunciation::{Mora, MoraEnum};
 
     use crate::{unvoiced_vowel::njd_set_unvoiced_vowel, NJD};
 

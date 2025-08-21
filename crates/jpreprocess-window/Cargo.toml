@@ -1,5 +1,5 @@
 [package]
-name = "jpreprocess-window"
+name = "jpreprocess-mod-window"
 edition = "2021"
 
 version.workspace = true

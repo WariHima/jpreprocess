@@ -1,4 +1,4 @@
-use jpreprocess_njd::NJDNode;
+use jpreprocess_mod_njd::NJDNode;
 
 use crate::limit::Limit;
 

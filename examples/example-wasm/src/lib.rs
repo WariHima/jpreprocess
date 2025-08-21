@@ -112,7 +112,7 @@ impl From<IVecString> for Vec<String> {
 
 #[wasm_bindgen]
 pub struct JPreprocess {
-    inner: jpreprocess::JPreprocess<jpreprocess::DefaultTokenizer>,
+    inner: jpreprocess_mod::JPreprocess<jpreprocess_mod::DefaultTokenizer>,
 }
 #[wasm_bindgen]
 impl JPreprocess {
@@ -133,7 +133,7 @@ impl JPreprocess {
         };
 
         Ok(Self {
-            inner: jpreprocess::JPreprocess::with_dictionaries(dictionary, user_dictionary),
+            inner: jpreprocess_mod::JPreprocess::with_dictionaries(dictionary, user_dictionary),
         })
     }
     #[wasm_bindgen]

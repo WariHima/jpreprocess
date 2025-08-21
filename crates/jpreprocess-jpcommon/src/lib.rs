@@ -6,7 +6,7 @@ pub use feature::*;
 use jlabel::Label;
 pub use label::*;
 
-use jpreprocess_njd::NJDNode;
+use jpreprocess_mod_njd::NJDNode;
 
 /// Converts NJDNode to fullcontext label
 pub fn njdnodes_to_features(njd_nodes: &[NJDNode]) -> Vec<Label> {

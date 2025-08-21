@@ -1,5 +1,5 @@
 use super::*;
-use jpreprocess_core::pron;
+use jpreprocess_mod_core::pron;
 use phf::phf_map;
 
 type Class3Keys = Map<&'static str, &'static [&'static str]>;

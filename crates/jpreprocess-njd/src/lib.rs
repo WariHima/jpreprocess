@@ -2,9 +2,9 @@ mod contrib;
 mod node;
 mod open_jtalk;
 
-use jpreprocess_core::{word_entry::WordEntry, JPreprocessResult};
-use jpreprocess_dictionary::tokenizer::Token;
-use jpreprocess_window::{IterQuintMut, IterQuintMutTrait};
+use jpreprocess_mod_core::{word_entry::WordEntry, JPreprocessResult};
+use jpreprocess_mod_dictionary::tokenizer::Token;
+use jpreprocess_mod_window::{IterQuintMut, IterQuintMutTrait};
 
 pub use contrib::*;
 pub use node::*;

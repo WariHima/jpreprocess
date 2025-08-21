@@ -1,5 +1,5 @@
 [package]
-name = "jpreprocess-jpcommon"
+name = "jpreprocess-mod-jpcommon"
 edition = "2021"
 
 version.workspace = true
@@ -14,5 +14,5 @@ documentation = "https://docs.rs/jpreprocess-jpcommon"
 
 [dependencies]
 jlabel.workspace = true
-jpreprocess-core.workspace = true
-jpreprocess-njd.workspace = true
+jpreprocess-mod-core.workspace = true
+jpreprocess-mod-njd.workspace = true

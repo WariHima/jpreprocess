@@ -4,7 +4,7 @@ pub mod limit;
 use std::rc::Rc;
 
 use jlabel::{Label, Phoneme};
-use jpreprocess_core::pronunciation::phoneme::Consonant;
+use jpreprocess_mod_core::pronunciation::phoneme::Consonant;
 
 use super::label::*;
 use builder::*;
@@ -219,7 +219,7 @@ fn pau_feature(
 
 #[cfg(test)]
 mod tests {
-    use jpreprocess_njd::NJDNode;
+    use jpreprocess_mod_njd::NJDNode;
 
     use super::*;
 

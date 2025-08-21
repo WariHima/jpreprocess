@@ -1,10 +1,10 @@
 use std::error::Error;
 
-use jpreprocess::{JPreprocess, JPreprocessConfig, SystemDictionaryConfig};
+use jpreprocess_mod::{JPreprocess, JPreprocessConfig, SystemDictionaryConfig};
 
 #[cfg(feature = "naist-jdic")]
-use jpreprocess::kind::*;
-use jpreprocess_dictionary::dictionary::to_dict::build_user_dict_from_data;
+use jpreprocess_mod::kind::*;
+use jpreprocess_mod_dictionary::dictionary::to_dict::build_user_dict_from_data;
 
 #[cfg(not(feature = "naist-jdic"))]
 use std::path::PathBuf;

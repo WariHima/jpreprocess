@@ -1,6 +1,6 @@
 use crate::NJD;
 
-use jpreprocess_core::pos::*;
+use jpreprocess_mod_core::pos::*;
 
 pub const HAIHUN1:&str="―"     /* horizontal bar */;
 pub const HAIHUN2:&str="−"     /* minus sign */;

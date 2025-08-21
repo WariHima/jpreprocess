@@ -7,8 +7,8 @@ use std::{
     sync::Mutex,
 };
 
-use jpreprocess_core::{word_entry::WordEntry, JPreprocessResult};
-use jpreprocess_dictionary::{
+use jpreprocess_mod_core::{word_entry::WordEntry, JPreprocessResult};
+use jpreprocess_mod_dictionary::{
     dictionary::word_encoding::JPreprocessDictionaryWordEncoding,
     tokenizer::{Token, Tokenizer},
 };

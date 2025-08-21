@@ -9,8 +9,8 @@ mod lut;
 
 use crate::{NJDNode, NJD};
 
-use jpreprocess_core::{pos::*, pron};
-use jpreprocess_window::*;
+use jpreprocess_mod_core::{pos::*, pron};
+use jpreprocess_mod_window::*;
 
 use self::lut::{
     class1, class2, class3, find_pron_conv_map, find_pron_conv_set, numeral, others, DigitType,

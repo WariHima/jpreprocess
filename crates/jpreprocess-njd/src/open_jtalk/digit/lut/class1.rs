@@ -1,5 +1,5 @@
 use super::*;
-use jpreprocess_core::pron;
+use jpreprocess_mod_core::pron;
 use phf::{phf_map, phf_set};
 
 pub const CONVERSION_TABLE: [(Keys, DigitLUT); 11] = [

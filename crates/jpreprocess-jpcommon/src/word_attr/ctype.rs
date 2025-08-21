@@ -1,4 +1,4 @@
-use jpreprocess_core::ctype::CType;
+use jpreprocess_mod_core::ctype::CType;
 
 pub fn ctype_to_id(ctype: &CType) -> Option<u8> {
     match ctype {

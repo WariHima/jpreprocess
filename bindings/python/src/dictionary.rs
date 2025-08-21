@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use jpreprocess_dictionary::dictionary::to_dict::JPreprocessDictionaryBuilder;
+use jpreprocess_mod_dictionary::dictionary::to_dict::JPreprocessDictionaryBuilder;
 use lindera_dictionary::dictionary_builder::{
     ipadic_neologd::IpadicNeologdBuilder, DictionaryBuilder,
 };

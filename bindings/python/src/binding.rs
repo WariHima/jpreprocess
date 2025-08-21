@@ -1,10 +1,10 @@
 use std::path::PathBuf;
 
-use jpreprocess::{JPreprocess, JPreprocessConfig, SystemDictionaryConfig};
-use jpreprocess_core::pos::POS;
-use jpreprocess_dictionary::tokenizer::default::DefaultTokenizer;
-use jpreprocess_jpcommon::njdnodes_to_features;
-use jpreprocess_njd::NJDNode;
+use jpreprocess_mod::{JPreprocess, JPreprocessConfig, SystemDictionaryConfig};
+use jpreprocess_mod_core::pos::POS;
+use jpreprocess_mod_dictionary::tokenizer::default::DefaultTokenizer;
+use jpreprocess_mod_jpcommon::njdnodes_to_features;
+use jpreprocess_mod_njd::NJDNode;
 
 use pyo3::prelude::*;
 

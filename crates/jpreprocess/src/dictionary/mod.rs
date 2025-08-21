@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use jpreprocess_core::JPreprocessResult;
+use jpreprocess_mod_core::JPreprocessResult;
 use lindera::dictionary::load_dictionary_from_path;
 use lindera_dictionary::dictionary::Dictionary;
 

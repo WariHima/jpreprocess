@@ -2,13 +2,13 @@
 
 use crate::NJD;
 
-use jpreprocess_core::{
+use jpreprocess_mod_core::{
     pos::*,
     pron,
     pronunciation::{MoraEnum, Pronunciation},
 };
 
-use jpreprocess_window::*;
+use jpreprocess_mod_window::*;
 
 pub fn njd_set_pronunciation(njd: &mut NJD) {
     {

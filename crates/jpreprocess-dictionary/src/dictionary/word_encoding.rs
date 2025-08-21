@@ -10,11 +10,11 @@ pub trait DictionaryWordEncoding: Sized {
 
 pub struct JPreprocessDictionaryWordEncoding;
 impl JPreprocessDictionaryWordEncoding {
-    pub fn serialize(data: &jpreprocess_core::word_entry::WordEntry) -> bincode::Result<Vec<u8>> {
+    pub fn serialize(data: &jpreprocess_mod_core::word_entry::WordEntry) -> bincode::Result<Vec<u8>> {
         use bincode::Options;
         Self::bincode_option().serialize(data)
     }
-    pub fn deserialize(data: &[u8]) -> bincode::Result<jpreprocess_core::word_entry::WordEntry> {
+    pub fn deserialize(data: &[u8]) -> bincode::Result<jpreprocess_mod_core::word_entry::WordEntry> {
         use bincode::Options;
         Self::bincode_option().deserialize(data)
     }
@@ -37,13 +37,13 @@ impl DictionaryWordEncoding for JPreprocessDictionaryWordEncoding {
     fn encode(row: &[&str]) -> LinderaResult<Vec<u8>> {
         let mut row = row.to_vec();
         row.resize(13, "");
-        let data = jpreprocess_core::word_entry::WordEntry::load(&row)
+        let data = jpreprocess_mod_core::word_entry::WordEntry::load(&row)
             .map_err(|err| LinderaErrorKind::Serialize.with_error(err))?;
         Self::serialize(&data).map_err(|err| LinderaErrorKind::Serialize.with_error(err))
     }
 
     fn decode(string: String, data: &[u8]) -> LinderaResult<Vec<String>> {
-        let word_details: jpreprocess_core::word_entry::WordEntry =
+        let word_details: jpreprocess_mod_core::word_entry::WordEntry =
             Self::deserialize(data).map_err(|err| LinderaErrorKind::Deserialize.with_error(err))?;
         Ok(word_details.to_str_vec(string).to_vec())
     }

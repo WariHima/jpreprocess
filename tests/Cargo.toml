@@ -11,13 +11,13 @@ categories.workspace = true
 rust-version.workspace = true
 
 [features]
-naist-jdic = ["jpreprocess/naist-jdic"]
+naist-jdic = ["jpreprocess-mod/naist-jdic"]
 
 [dependencies]
-jpreprocess.workspace = true
-jpreprocess-core.workspace = true
-jpreprocess-dictionary.workspace = true
-jpreprocess-njd.workspace = true
-jpreprocess-jpcommon.workspace = true
+jpreprocess-mod.workspace = true
+jpreprocess-mod-core.workspace = true
+jpreprocess-mod-dictionary.workspace = true
+jpreprocess-mod-njd.workspace = true
+jpreprocess-mod-jpcommon.workspace = true
 
 lindera.workspace = true

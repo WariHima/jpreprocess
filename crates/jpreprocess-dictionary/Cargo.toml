@@ -1,5 +1,5 @@
 [package]
-name = "jpreprocess-dictionary"
+name = "jpreprocess-mod-dictionary"
 edition = "2021"
 
 version.workspace = true
@@ -36,6 +36,6 @@ lindera-dictionary.workspace = true
 
 serde.workspace = true
 
-jpreprocess-core.workspace = true
+jpreprocess-mod-core.workspace = true
 
 clap = { workspace = true, features = ["derive"], optional = true }

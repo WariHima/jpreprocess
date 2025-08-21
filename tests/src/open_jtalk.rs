@@ -1,11 +1,11 @@
 use std::io::Write;
 use std::process::{Command, Stdio};
 
-use jpreprocess::*;
-use jpreprocess_njd::NJDNode;
+use jpreprocess_mod::*;
+use jpreprocess_mod_njd::NJDNode;
 
 #[cfg(feature = "naist-jdic")]
-use jpreprocess::kind::*;
+use jpreprocess_mod::kind::*;
 
 #[cfg(not(feature = "naist-jdic"))]
 use std::path::PathBuf;
@@ -48,7 +48,7 @@ fn test_one(input_text: &'static str) {
 
     njd.preprocess();
 
-    let features = jpreprocess_jpcommon::njdnodes_to_features(&njd.nodes);
+    let features = jpreprocess_mod_jpcommon::njdnodes_to_features(&njd.nodes);
 
     let njd_string = jpreprocess.run_frontend(input_text).unwrap();
     for (nontext, text) in jpreprocess.make_label(njd_string).iter().zip(&features) {

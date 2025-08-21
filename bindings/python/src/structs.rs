@@ -1,6 +1,6 @@
 use std::str::FromStr;
 
-use jpreprocess_core::{
+use jpreprocess_mod_core::{
     accent_rule::ChainRules,
     cform::CForm,
     ctype::CType,
@@ -10,7 +10,7 @@ use jpreprocess_core::{
     word_entry::WordEntry,
     JPreprocessError,
 };
-use jpreprocess_njd::NJDNode;
+use jpreprocess_mod_njd::NJDNode;
 use pyo3::prelude::*;
 use pythonize::{depythonize, pythonize};
 use serde::{Deserialize, Serialize};

@@ -1,4 +1,4 @@
-use jpreprocess_core::pos::*;
+use jpreprocess_mod_core::pos::*;
 
 pub fn pos_to_id(pos: &POS) -> Option<u8> {
     match pos {

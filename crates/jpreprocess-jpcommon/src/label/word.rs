@@ -1,6 +1,6 @@
-use jpreprocess_core::pronunciation::Pronunciation;
+use jpreprocess_mod_core::pronunciation::Pronunciation;
 
-use jpreprocess_njd::NJDNode;
+use jpreprocess_mod_njd::NJDNode;
 
 use crate::word_attr::*;
 

@@ -48,13 +48,13 @@ mod normalize_text;
 pub use dictionary::*;
 pub use normalize_text::normalize_text_for_naist_jdic;
 
-pub use jpreprocess_core::error;
-pub use jpreprocess_dictionary::tokenizer::{default::DefaultTokenizer, Tokenizer};
-pub use jpreprocess_njd::NJD;
+pub use jpreprocess_mod_core::error;
+pub use jpreprocess_mod_dictionary::tokenizer::{default::DefaultTokenizer, Tokenizer};
+pub use jpreprocess_mod_njd::NJD;
 pub use lindera::dictionary::UserDictionaryConfig;
 pub use lindera_dictionary::dictionary::{Dictionary, UserDictionary};
 
-use jpreprocess_core::*;
+use jpreprocess_mod_core::*;
 use lindera::dictionary::load_user_dictionary_from_config;
 
 pub struct JPreprocessConfig {
@@ -210,7 +210,7 @@ impl<T: Tokenizer> JPreprocess<T> {
     /// [`run_frontend`]: #method.run_frontend
     pub fn make_label(&self, njd_features: Vec<String>) -> Vec<jlabel::Label> {
         let njd = NJD::from_strings(njd_features);
-        jpreprocess_jpcommon::njdnodes_to_features(&njd.nodes)
+        jpreprocess_mod_jpcommon::njdnodes_to_features(&njd.nodes)
     }
 
     /// Generate jpcommon features from a text.
@@ -222,13 +222,13 @@ impl<T: Tokenizer> JPreprocess<T> {
     pub fn extract_fullcontext(&self, text: &str) -> JPreprocessResult<Vec<jlabel::Label>> {
         let mut njd = Self::text_to_njd(self, text)?;
         njd.preprocess();
-        Ok(jpreprocess_jpcommon::njdnodes_to_features(&njd.nodes))
+        Ok(jpreprocess_mod_jpcommon::njdnodes_to_features(&njd.nodes))
     }
 }
 
 #[cfg(test)]
 mod tests {
-    use jpreprocess_dictionary::tokenizer::default::DefaultTokenizer;
+    use jpreprocess_mod_dictionary::tokenizer::default::DefaultTokenizer;
 
     use crate::JPreprocess;
 

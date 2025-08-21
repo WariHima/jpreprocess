@@ -1,5 +1,5 @@
 [package]
-name = "jpreprocess-core"
+name = "jpreprocess-mod-core"
 edition = "2021"
 
 version.workspace = true

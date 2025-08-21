@@ -4,7 +4,7 @@ pub mod class3;
 pub mod numeral;
 pub mod others;
 
-use jpreprocess_core::pronunciation::Pronunciation;
+use jpreprocess_mod_core::pronunciation::Pronunciation;
 use phf::{Map, Set};
 
 #[derive(Debug, Clone, Copy)]

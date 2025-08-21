@@ -11,9 +11,9 @@ categories.workspace = true
 rust-version.workspace = true
 
 [dependencies]
-jpreprocess.workspace = true
-jpreprocess-core.workspace = true
-jpreprocess-dictionary.workspace = true
+jpreprocess-mod.workspace = true
+jpreprocess-mod-core.workspace = true
+jpreprocess-mod-dictionary.workspace = true
 
 lindera.workspace = true
 lindera-dictionary.workspace = true

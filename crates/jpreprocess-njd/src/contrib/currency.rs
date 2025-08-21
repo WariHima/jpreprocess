@@ -2,7 +2,7 @@
 //!
 //! Note: This filter treats `\` (backslash) as yen sign.
 
-use jpreprocess_window::{IterQuintMutTrait, Triple};
+use jpreprocess_mod_window::{IterQuintMutTrait, Triple};
 
 use crate::{NJDNode, NJD};
 

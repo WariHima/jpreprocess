@@ -21,7 +21,7 @@ const CHOU: &str = "兆";
 const NAN: &str = "何";
 const IKU: &str = "幾";
 
-use jpreprocess_core::accent_rule::AccentType;
+use jpreprocess_mod_core::accent_rule::AccentType;
 
 use crate::{NJDNode, NJD};
 

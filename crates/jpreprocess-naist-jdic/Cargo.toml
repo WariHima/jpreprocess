@@ -1,5 +1,5 @@
 [package]
-name = "jpreprocess-naist-jdic"
+name = "jpreprocess-mod-naist-jdic"
 edition = "2021"
 
 version.workspace = true
@@ -22,4 +22,4 @@ lindera-dictionary.workspace = true
 tokio = { workspace = true, optional = true }
 
 lindera-dictionary = { workspace = true, default-features = true }
-jpreprocess-dictionary.workspace = true
+jpreprocess-mod-dictionary.workspace = true
