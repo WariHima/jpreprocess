@@ -1,5 +1,5 @@
 [package]
-name = "jpreprocess-python"
+name = "jpreprocess-mod-python"
 edition = "2021"
 version = "0.1.5"
 
