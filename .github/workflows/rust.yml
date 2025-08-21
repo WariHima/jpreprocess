@@ -90,7 +90,7 @@ jobs:
 
     - name: Get MSRV
       id: msrv
-      run: echo "msrv=$(cargo metadata --no-deps --format-version=1 | jq -r ".packages[] | select(.name==\"jpreprocess\") | .rust_version")" >> $GITHUB_OUTPUT
+      run: echo "msrv=$(cargo metadata --no-deps --format-version=1 | jq -r ".packages[] | select(.name==\"jpreprocess_mod\") | .rust_version")" >> $GITHUB_OUTPUT
 
     - name: Install Rust
       uses: dtolnay/rust-toolchain@b3b07ba8b418998c39fb20f53e8b695cdcc8de1b # master
