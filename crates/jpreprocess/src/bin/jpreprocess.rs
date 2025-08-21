@@ -1,7 +1,7 @@
 use std::error::Error;
 use std::path::PathBuf;
 
-use jpreprocess::*;
+use jpreprocess_mod::*;
 
 use clap::{Args, Parser};
 
