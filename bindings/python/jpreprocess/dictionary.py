@@ -25,9 +25,9 @@ def download_dictionary(version: str) -> str:
     import tempfile
 
     if version == "latest":
-        url = f"https://github.com/jpreprocess/jpreprocess/releases/latest/download/naist-jdic-jpreprocess.tar.gz"
+        url = f"https://github.com/WariHima/jpreprocess/releases/latest/download/naist-jdic-jpreprocess.tar.gz"
     else:
-        url = f"https://github.com/jpreprocess/jpreprocess/releases/download/{version}/naist-jdic-jpreprocess.tar.gz"
+        url = f"https://github.com/WariHima/jpreprocess/releases/download/{version}/naist-jdic-jpreprocess.tar.gz"
 
     target_dir = _file_ref / version
 
