@@ -1,4 +1,4 @@
-use jpreprocess_dictionary::{
+use jpreprocess_mod_dictionary::{
     dictionary::word_encoding::JPreprocessDictionaryWordEncoding, word_data::get_word_data,
 };
 use lindera::dictionary::{Dictionary, UserDictionary};

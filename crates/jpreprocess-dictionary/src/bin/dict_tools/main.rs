@@ -1,7 +1,7 @@
 use std::{error::Error, fs::File, io::Write, path::PathBuf};
 
 use clap::{Parser, Subcommand, ValueEnum};
-use jpreprocess_dictionary::dictionary::{
+use jpreprocess_mod_dictionary::dictionary::{
     to_csv::dict_to_csv,
     to_dict::JPreprocessDictionaryBuilder,
     word_encoding::{
