@@ -29,7 +29,7 @@ impl QueryDict {
     pub fn get_as_jpreprocess(
         &self,
         word_id: u32,
-    ) -> Option<jpreprocess_core::word_entry::WordEntry> {
+    ) -> Option<jpreprocess_mod_core::word_entry::WordEntry> {
         let word_bin = match self {
             Self::System(dict) => get_word_data(
                 &dict.prefix_dictionary.words_idx_data,
