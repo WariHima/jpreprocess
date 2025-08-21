@@ -5,7 +5,7 @@
 //! ```rust
 //! # use std::error::Error;
 //! # use std::path::PathBuf;
-//! use jpreprocess::*;
+//! use jpreprocess_mod::*;
 //!
 //! # fn main() -> Result<(), Box<dyn Error>> {
 //! #     let path = PathBuf::from("../../tests/data/min-dict");
@@ -79,7 +79,7 @@ impl JPreprocess<DefaultTokenizer> {
     /// ```rust
     /// # use std::error::Error;
     /// # use std::path::PathBuf;
-    /// use jpreprocess::*;
+    /// use jpreprocess_mod::*;
     ///
     /// # fn main() -> Result<(), Box<dyn Error>> {
     /// #     let path = PathBuf::from("../../tests/data/min-dict");
@@ -97,7 +97,7 @@ impl JPreprocess<DefaultTokenizer> {
     ///
     /// ```rust
     /// # use std::error::Error;
-    /// use jpreprocess::{*, kind::*};
+    /// use jpreprocess_mod::{*, kind::*};
     ///
     /// # #[cfg(feature = "naist-jdic")]
     /// # fn main() -> Result<(), Box<dyn Error>> {
@@ -153,8 +153,8 @@ impl<T: Tokenizer> JPreprocess<T> {
     /// ```rust
     /// # use std::error::Error;
     /// # use std::path::PathBuf;
-    /// use jpreprocess::*;
-    /// use jpreprocess_jpcommon::*;
+    /// use jpreprocess_mod::*;
+    /// use jpreprocess_mod_jpcommon::*;
     ///
     /// # fn main() -> Result<(), Box<dyn Error>> {
     /// #     let path = PathBuf::from("../../tests/data/min-dict");
