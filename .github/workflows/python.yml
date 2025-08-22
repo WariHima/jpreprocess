@@ -49,7 +49,7 @@ jobs:
         shell: bash
         run: |
           set -e
-          pip install jpreprocess --find-links dist --force-reinstall
+          pip install jpreprocess_mod --find-links dist --force-reinstall
           pip install pytest
           cd bindings/python && pytest
       - name: pytest
@@ -65,7 +65,7 @@ jobs:
             pip3 install -U pip pytest
           run: |
             set -e
-            pip3 install jpreprocess --find-links dist --force-reinstall
+            pip3 install jpreprocess_mod --find-links dist --force-reinstall
             cd bindings/python && pytest
 
   windows:
