@@ -1,6 +1,6 @@
 [package]
 name = "jpreprocess-mod-python"
-edition = "2025"
+edition = "2021"
 version = "0.1.6"
 
 description.workspace = true
