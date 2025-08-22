@@ -128,7 +128,7 @@ jobs:
         shell: bash
         run: |
           set -e
-          pip install jpreprocess --find-links dist --force-reinstall
+          pip install jpreprocess_mod --find-links dist --force-reinstall
           pip install pytest
           cd bindings/python && pytest
 
