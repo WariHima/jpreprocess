@@ -1,13 +1,13 @@
-import jpreprocess
+import jpreprocess_mod
 import pytest
 
 
 @pytest.fixture(scope="module")
-def jpre() -> jpreprocess.JPreprocess:
-    return jpreprocess.jpreprocess(dictionary_version="latest")
+def jpre() -> jpreprocess_mod.JPreprocess:
+    return jpreprocess_mod.jpreprocess(dictionary_version="latest")
 
 
-def test_run_frontend(jpre: jpreprocess.JPreprocess) -> None:
+def test_run_frontend(jpre: jpreprocess_mod.JPreprocess) -> None:
     njd_features = jpre.run_frontend("本日は晴天なり")
 
     assert len(njd_features) == 4
@@ -41,7 +41,7 @@ def test_run_frontend(jpre: jpreprocess.JPreprocess) -> None:
     assert njd_features[2]["chain_flag"] == 0
 
 
-def test_extract_fullcontext(jpre: jpreprocess.JPreprocess) -> None:
+def test_extract_fullcontext(jpre: jpreprocess_mod.JPreprocess) -> None:
     fullcontext = jpre.extract_fullcontext("本日は晴天なり")
 
     assert len(fullcontext) == 21
@@ -51,7 +51,7 @@ def test_extract_fullcontext(jpre: jpreprocess.JPreprocess) -> None:
     assert fullcontext[16] == r"e^N-n+a=r/A:0+5+2/B:02-xx_xx/C:10_6+2/D:xx+xx_xx/E:5_1!0_xx-1/F:6_5#0_xx@2_1|6_6/G:xx_xx%xx_xx_xx/H:xx_xx/I:2-11@1+1&1-2|1+11/J:xx_xx/K:1+2-11"
 
 
-def test_g2p(jpre: jpreprocess.JPreprocess) -> None:
+def test_g2p(jpre: jpreprocess_mod.JPreprocess) -> None:
     assert jpre.g2p("本日は晴天なり", kana=False,
                     join=True) == "h o N j i ts u w a s e e t e N n a r i"
     assert jpre.g2p("本日は晴天なり", kana=False,

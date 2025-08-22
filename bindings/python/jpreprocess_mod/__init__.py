@@ -1,5 +1,5 @@
 import os
-from .jpreprocess import (
+from .jpreprocess_mod import (
     __version__,
     JPreprocess,
     build_dictionary,
